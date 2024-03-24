@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup Page</title>
+    <link rel="stylesheet" href="css login page.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1 id="form-title">LOGIN</h1>
+        <form id="login-form" class="form">
+            <div class="input-group">
+                <label for="username">Username :</label>
+                <input type="text" class="box" id="username" name="username" required placeholder="Enter Username">
+            </div>
+            <div class="input-group">
+                <label for="password"> Password : </label>
+                <input type="password" class="box" id="password" name="password" placeholder="Enter Password">
+            </div>
+            <button type="submit" id="login">LOGIN</button>
+            <a href="#" id="signup-link"> <button>Sign Up</button></a>
+         <div>
+            <a href="#" id="forgot-password">Forget Password?<span>Click here</span></a>
+        </div>
+        </form>
+
+        <form id="signup-form" class="form" style="display: none;">
+            <div class="input-group">
+                <label for="fullname">Full Name :</label>
+                <input type="text" class="box" id="fullname" name="fullname" required placeholder="Enter Full Name">
+            </div>
+            <div class="input-group">
+                <label for="email">Email :</label>
+                <input type="email" class="box" id="email" name="email" required placeholder="Enter Email">
+            </div>
+            <div class="input-group">
+                <label for="signup-password"> Password : </label>
+                <input type="password" class="box" id="signup-password" name="signup-password" placeholder="Enter Password">
+            </div>
+            <button type="submit" id="signup">SIGN UP</button>
+            <a href="#" id="login-link"><button>Login</button></a>
+        </form>
+        <p id="error-msg" class="error-message"></p>
+    </div>
+
+    <script src="login page.js"></script>
+</body>
+</html>
